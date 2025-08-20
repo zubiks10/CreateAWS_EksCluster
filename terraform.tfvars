@@ -1,0 +1,9 @@
+region              = "us-east-1"
+cluster_name        = "my-eks-cluster"
+vpc_id              = "vpc-0ffd585eca55c7a39"
+subnet_ids          = ["subnet-00c91fb76d7006fc9", "subnet-00fc2a9c8d18436fc", "subnet-00536256b1494bfe8"]
+node_instance_types = ["t2.micro"]
+desired_capacity    = 2
+max_capacity        = 3
+min_capacity        = 1
+AWS_DEFAULT_REGION  = "us-east-1"
