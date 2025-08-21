@@ -59,5 +59,5 @@ variable "desired_capacity" {
 variable "AWS_DEFAULT_REGION" {
   description = "AWS region to deploy resources"
   type        = string
-  default     = "us-east-1"  # optional
+  default     = "us-east-1" # optional
 }
