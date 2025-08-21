@@ -21,18 +21,19 @@ terraform {
   }
 
   cloud {
-    organization = "hcubesys-ltd"
+    # ✅ Must match exactly what you see in Terraform Cloud
+    organization = "HCL2025"
 
     workspaces {
+      # ✅ Make sure this workspace exists in Terraform Cloud
       name = "testinguat"
     }
   }
 }
 
 provider "aws" {
-  region     = var.region
-  access_key = var.AWS_ACCESS_KEY_ID    # optional, use environment variables in production
-  secret_key = var.AWS_SECRET_ACCESS_KEY # optional, use environment variables in production
+  # ✅ Only keep the region here
+  region = var.region
 }
 
 module "eks" {
